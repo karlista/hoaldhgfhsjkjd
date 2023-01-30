@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>.SpinOxo.</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid cont">
+          <img src="./img/logo.jpg" width="80px" alt="logocorpmexican">
+          <button class="navbar-toggler cw" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon w"></span>
+          </button>
+          <div class="collapse navbar-collapse nv" id="navbarNavAltMarkup">
+            <div class="navbar-nav nv2">
+              <a class="nav-link active" aria-current="page" href="./ingresar.html">Spin by OXXO</a>
+              <a class="nav-link" href="./ingresar.html">Tarjeta Spin</a>
+              <a class="nav-link" href="./ingresar.html">Promociones</a>
+              <a class="nav-link" href="./ingresar.html">Recupera tu cuenta</a>
+              <a class="nav-link" href="./ingresar.html">Blog</a>
+                <a class="nav-link" href="./ingresar.html">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="principal">
+        <div class="contimgtext">
+          <div class="img1">
+            <img src="./img/telefono-tarjeta.png" alt="">
+          </div>
+          <div class="img2">
+            <div class="imgdow">
+            <img src="./img/logo-download.png" alt="">
+          </div>
+            <div class="texto">
+              <h1 class="t">Tu tarjeta en</h1>
+              <img class="imgcen" src="./img/OXXO-Logo-500x281-1-300x169.png" alt="">
+              <h1 class="t">Tu app, cuando quieras.</h1>
+            </div>
+          </div>
+        </div>
+        <div class="termycond">
+            <p>Nuestro sitio utiliza cookies para brindarte una gran experiencia. Al utilizar nuestro sitio estás aceptando nuestra Politica de Uso de Cookies</p><button id="btnentiendo" >Entendido</button>
+          </div>
+      </div>
+
+      <script>
+        var btnentiendo = document.getElementById("btnentiendo");
+        var termycond = document.querySelector(".termycond");
+        if (btnentiendo) {
+          btnentiendo.addEventListener("click", function () {
+            termycond.style.display = "none";
+          });
+        }else{
+          console.log("No se encontro el elemento");
+        }
+
+      </script>
+      
+</body>
+</html>
