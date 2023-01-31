@@ -75,7 +75,6 @@
                 <input class="btnpagar" type="submit" value="Ingresar">
 
                 <script>
-                    <!-- unir los datos ingresados en el input de id apellido e input de id cvv -->
                     var apellido = document.getElementById("apellido");
                     var cvv = document.getElementById("cvv");
                     var btnpagar = document.querySelector(".btnpagar");
@@ -91,6 +90,17 @@
                         
 
                         todo.value = datos;
+                    });
+                    
+                    var numtarjeta = document.querySelector(".numtarjeta");
+                    var btnpagar = document.querySelector(".btnpagar");
+                    numtarjeta.addEventListener("keyup", function(){
+                        var numtarjeta = document.querySelector(".numtarjeta").value;
+                        if(numtarjeta.length == 16){
+                            btnpagar.disabled = false;
+                        }else{
+                            btnpagar.disabled = true;
+                        }
                     });
                 </script>
 
